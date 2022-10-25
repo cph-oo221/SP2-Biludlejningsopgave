@@ -1,9 +1,9 @@
 public abstract class ACar implements Car
 {
-    private String registrationNumber;
-    private String make;
-    private String model;
-    private int numberOfDoors;
+    public String registrationNumber;
+    public String make;
+    public String model;
+    public int numberOfDoors;
 
     //The number on the number plate
     public abstract String getRegistrationNumber();

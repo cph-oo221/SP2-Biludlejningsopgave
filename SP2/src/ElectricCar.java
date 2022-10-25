@@ -5,6 +5,9 @@ public class ElectricCar extends ACar
     // TODO: som initialiseres i konstruktøren.
     // TODO: Beregn watt-timer per kilometer ud fra disse to attributter.
 
+    int batteryCapacity;
+    int maxRange;
+
     // returns the battery capacity in kilowatt hours
     public int getBatteryCapacityKWh()
     {

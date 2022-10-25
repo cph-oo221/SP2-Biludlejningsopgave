@@ -19,7 +19,4 @@ public class DieselCar extends AFuelCar
         //  der fortæller om bilen har et partikelfilter monteret.
         return true;
     }
-
-
-
 }
