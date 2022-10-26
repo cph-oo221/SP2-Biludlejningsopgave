@@ -21,13 +21,11 @@ public class FleetOfCars
             sum += cars.getRegistrationFee();
         }
         return sum;
-
     }
 
     @Override
     public String toString()
     {
-        return "FleetOfCars: " +
-                "cars: " + fleet;
+        return "FleetOfCars: " + "cars: " + fleet;
     }
 }

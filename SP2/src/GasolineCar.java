@@ -67,10 +67,7 @@ public class GasolineCar extends AFuelCar
     public String toString()
     {
         return "GasolineCar: " +
-                "| kmPrlitre: " + kmPrlitre +
-                " | registrationNumber: " + registrationNumber + " |" +
-                " make: " + make + " |" +
-                " model: " + model + " | numberOfDoors: " + numberOfDoors + " |";
+                " | kmPrlitre: " + kmPrlitre + " | registrationNumber: " + registrationNumber +
+                " | make: " + make + " | model: " + model + " | numberOfDoors: " + numberOfDoors + " |";
     }
-
 }
