@@ -2,7 +2,6 @@ public class Main
 {
     public static void main(String[] args)
     {
-        // Instance fleetOfCars
         FleetOfCars fleetOfCars = new FleetOfCars();
 
         // add cars to the fleetOfCars.

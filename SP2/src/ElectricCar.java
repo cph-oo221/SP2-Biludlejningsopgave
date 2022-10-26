@@ -11,7 +11,7 @@ public class ElectricCar extends ACar
     }
 
 
-    // returns the battery capacity in kilowatt hours
+    // returns the battery capacity in kWh
     public int getBatteryCapacityKWh()
     {
         return batteryCapacity;

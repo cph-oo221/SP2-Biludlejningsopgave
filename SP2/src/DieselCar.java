@@ -83,10 +83,11 @@ public class DieselCar extends AFuelCar
     @Override
     public String toString()
     {
-        return "DieselCar: " + "| particleFilter: " + particleFilter +
+        return "DieselCar: " +
                 " | kmPrlitre: " + kmPrlitre +
                 " | registrationNumber: " + registrationNumber +
                 " | make: " + make + " | model: " + model +
-                " | numberOfDoors: " + numberOfDoors + " |";
+                " | numberOfDoors: " + numberOfDoors +
+                " | particleFilter: " + particleFilter +" |";
     }
 }

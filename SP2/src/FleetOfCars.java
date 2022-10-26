@@ -4,10 +4,6 @@ public class FleetOfCars
 {
     private final ArrayList<Car> fleet = new ArrayList<>();
 
-    public FleetOfCars()
-    {
-    }
-
     public void addCar(Car car)
     {
         fleet.add(car);
