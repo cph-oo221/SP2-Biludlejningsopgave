@@ -1,19 +1,50 @@
 public abstract class ACar implements Car
 {
-    public String registrationNumber;
-    public String make;
-    public String model;
-    public int numberOfDoors;
+    protected String registrationNumber;
+    protected String make;
+    protected String model;
+    protected int numberOfDoors;
+
+    public ACar(String registrationNumber, String make, String model, int numberOfDoors)
+    {
+        this.registrationNumber = registrationNumber;
+        this.make = make;
+        this.model = model;
+        this.numberOfDoors = numberOfDoors;
+    }
 
     //The number on the number plate
-    public abstract String getRegistrationNumber();
+    public String getRegistrationNumber()
+    {
+        return registrationNumber;
+    }
 
     // The make of the car e.g. Audi
-    public abstract String getMake();
+    public String getMake()
+    {
+        return make;
+    }
 
     // The model of the car e.g. A6
-    public abstract String getModel();
+    public String getModel()
+    {
+        return model;
+    }
 
     // The number of doors
-    public abstract int getNumberOfDoors();
+    public int getNumberOfDoors()
+    {
+        return numberOfDoors;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "ACar{" +
+                "registrationNumber='" + registrationNumber + '\'' +
+                ", make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", numberOfDoors=" + numberOfDoors +
+                '}';
+    }
 }
