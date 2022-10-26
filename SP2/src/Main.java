@@ -5,6 +5,7 @@ public class Main
         // instancit fleetOfCars
         FleetOfCars fleetOfCars = new FleetOfCars();
 
+
         fleetOfCars.addCar(new GasolineCar("AB 12 345", "Ford", "Focus", 5, 20));
         fleetOfCars.addCar(new GasolineCar("CD 34 567", "Ford", "Mustang", 5, 10));
         fleetOfCars.addCar(new GasolineCar("EF 56 789", "Ford", "Mondeo", 5, 42));
@@ -21,7 +22,9 @@ public class Main
         System.out.println(fleetOfCars);
 
         // print out getTotalRegistrationFeeForFleet
-        System.out.println("The total amount of fees for fleet of cars: " + fleetOfCars.getTotalRegistrationFeeForFleet() + " kr.");
+        // \n (space between the other sout)
+        System.out.println();
+        System.out.println("The total amount of fees for the fleet: " + fleetOfCars.getTotalRegistrationFeeForFleet() + " kr.");
 
     }
 }

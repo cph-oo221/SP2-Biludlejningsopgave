@@ -1,7 +1,5 @@
 public abstract class AFuelCar extends ACar
 {
-    // TODO Lav en attribut til at gemme kilometer per liter og initialisér den i konstruktøren.
-
     protected int kmPrlitre;
     public AFuelCar(String registrationNumber, String make, String model, int numberOfDoors, int kmPrlitre)
     {
@@ -17,7 +15,4 @@ public abstract class AFuelCar extends ACar
     {
         return kmPrlitre;
     }
-
-
-
 }

@@ -1,6 +1,5 @@
 public class GasolineCar extends AFuelCar
 {
-    // TODO Registreringsafgiften skal beregnes ud fra beskrivelsen i toppen af opgaven.
     public GasolineCar(String registrationNumber, String make, String model, int numberOfDoors, int kmPrlitre)
     {
         super(registrationNumber, make, model, numberOfDoors, kmPrlitre);
@@ -40,38 +39,38 @@ public class GasolineCar extends AFuelCar
     @Override
     public int getRegistrationFee()
     {
-        if (kmPrlitre < 5)
-        {
-            return 10470;
-        }
-        else if (kmPrlitre < 10)
-        {
-            return 5500;
-        }
-        else if (kmPrlitre < 15)
-        {
-            return 2340;
-        }
-        else if (kmPrlitre < 20)
-        {
-            return 1050;
-        }
-        else
+
+        if (kmPrlitre >= 20 && kmPrlitre < 50)
         {
             return 330;
         }
+        else if (kmPrlitre >= 15 && kmPrlitre < 20)
+        {
+            return 1050;
+        }
+        else if (kmPrlitre >= 10 && kmPrlitre < 15)
+        {
+            return 2340;
+        }
+        else if (kmPrlitre >= 5 && kmPrlitre < 10)
+        {
+            return 5500;
+        }
+        else if (kmPrlitre < 5)
+        {
+            return 10470;
+        }
+        return 330;
     }
 
     @Override
     public String toString()
     {
-        return "GasolineCar{" +
-                "kmPrlitre=" + kmPrlitre +
-                ", registrationNumber='" + registrationNumber + '\'' +
-                ", make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", numberOfDoors=" + numberOfDoors +
-                "} " + super.toString();
+        return "GasolineCar: " +
+                "| kmPrlitre: " + kmPrlitre +
+                " | registrationNumber: " + registrationNumber + " |" +
+                " make: " + make + " |" +
+                " model: " + model + " | numberOfDoors: " + numberOfDoors + " |";
     }
 
 }

@@ -6,7 +6,6 @@ public class FleetOfCars
 
     public FleetOfCars()
     {
-
     }
 
     public void addCar(Car car)
@@ -28,8 +27,7 @@ public class FleetOfCars
     @Override
     public String toString()
     {
-        return "FleetOfCars{" +
-                "cars=" + fleet +
-                '}';
+        return "FleetOfCars: " +
+                "cars: " + fleet;
     }
 }
