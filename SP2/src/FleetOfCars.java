@@ -26,6 +26,13 @@ public class FleetOfCars
     @Override
     public String toString()
     {
-        return "FleetOfCars: " + "cars: " + fleet;
+        // Each time there is a new car in the fleet is printed
+        // it will be on the line below the last car.
+        String fleetString = "";
+        for(Car cars : fleet)
+        {
+            fleetString += cars.toString() + " " + "\n";
+        }
+        return fleetString;
     }
 }

@@ -77,7 +77,6 @@ public class DieselCar extends AFuelCar
 
     public boolean hasParticleFilter()
     {
-        //  der fortæller om bilen har et partikelfilter monteret.
         return particleFilter;
     }
 

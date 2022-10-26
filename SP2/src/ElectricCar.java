@@ -32,25 +32,25 @@ public class ElectricCar extends ACar
     @Override
     public int getRegistrationFee()
     {
-        int kmPrlitre = Math.round(100 / (getWhPrKm() / (float) 91.25));
+        int kmPrLitre = Math.round(100 / (getWhPrKm() / (float) 91.25));
 
-        if (kmPrlitre >= 20 && kmPrlitre < 50)
+        if (kmPrLitre >= 20 && kmPrLitre < 50)
         {
             return 330;
         }
-        else if (kmPrlitre >= 15 && kmPrlitre < 20)
+        else if (kmPrLitre >= 15 && kmPrLitre < 20)
         {
             return 1050;
         }
-        else if (kmPrlitre >= 10 && kmPrlitre < 15)
+        else if (kmPrLitre >= 10 && kmPrLitre < 15)
         {
             return 2340;
         }
-        else if (kmPrlitre >= 5 && kmPrlitre < 10)
+        else if (kmPrLitre >= 5 && kmPrLitre < 10)
         {
             return 5500;
         }
-        else if (kmPrlitre < 5)
+        else if (kmPrLitre < 5)
         {
             return 10470;
         }
@@ -88,8 +88,8 @@ public class ElectricCar extends ACar
                 " | batteryCapacity: " + batteryCapacity +
                 " | maxRange: " + maxRange +
                 " | registrationNumber: " + registrationNumber +
-                " | make='" + make +
-                " | model='" + model +
+                " | make: " + make +
+                " | model: " + model +
                 " | numberOfDoors: " + numberOfDoors + " |";
     }
 }
