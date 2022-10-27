@@ -44,30 +44,32 @@ public class DieselCar extends AFuelCar
         int registrationFee = 0;
         if (kmPrlitre < 5)
         {
-            registrationFee += 10470;
-            registrationFee += 15260;
+            registrationFee += 10470; // additional fee
+            registrationFee += 15260; // equalization tax
         }
         else if (kmPrlitre < 10)
         {
-            registrationFee += 5500;
-            registrationFee += 2770;
+            registrationFee += 5500; // additional fee
+            registrationFee += 2770; // equalization tax
         }
         else if (kmPrlitre < 15)
         {
-            registrationFee += 2340;
-            registrationFee += 1850;
+            registrationFee += 2340; // additional fee
+            registrationFee += 1850; // equalization tax
         }
         else if (kmPrlitre < 20)
         {
-            registrationFee += 1050;
-            registrationFee += 1390;
+            registrationFee += 1050; // additional fee
+            registrationFee += 1390; // equalization tax
         }
         else
         {
-            registrationFee += 330;
-            registrationFee += 130;
+            registrationFee += 330; // additional fee
+            registrationFee += 130; // equalization tax
         }
 
+        // check for an additional particle emission tax
+        // if a car does not have a particulate filter fitted.
         if(!hasParticleFilter())
         {
             registrationFee += 1000;
